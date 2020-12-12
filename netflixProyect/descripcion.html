@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX MARITOTOP</title>
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/estilos-descripcion.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="logotipo">NETFLIX</h1>
+            <nav>
+                <a href="index.html">Series</a>
+                <a href='#' onclick="salir()" class="activo">Salir</a>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor" id="cabecera">
+        <h1>The walking dead</h1>
+        <div class="imagen-serie">
+            <img src="imagenes/walkindead-portada.jpg" alt="imagenserie">
+        </div>
+        <h2>Descripcion</h2>
+        <p class="resumen">Resumen. The Walking Dead tiene lugar después del inicio de un apocalipsis zombi mundial.
+            Los zombis, coloquialmente llamados «caminantes», se arrastran hacia los humanos vivos y otras
+            criaturas para comerlos; se sienten atraídospor el ruido, como los disparos, y por
+            diferentes aromas, por ejemplo humanos.</p>
+    </div>
+    
+    <div class="contenedor" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;">
+        <div>
+            <h2>Temporadas</h2>
+            <ul id="listTemporada" style="line-height: 30px;">
+            </ul>
+        </div>
+        <br><br>
+        <div>
+            <h2>Episodios</h2>
+            <ul id="listEpisodio" style="line-height: 30px;">
+                
+            </ul>
+        </div>
+    </div>
+    <div class="reproductor" id="elVideo">
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./js/descripcion.js"></script>
+
+</body>
+
+</html>

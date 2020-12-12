@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #141414;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+.header{
+    padding: 30px 0;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logotipo{
+    font-weight: normal;
+    font-family: 'Bebas Neue', cursive;
+    color: #E50914;
+    font-size: 40px;
+}
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+header nav a:hover,
+header nav a.activo {
+    color: #FFF;
+}
+/* Pelicula principal */
+.pelicula_principal {
+    font-size: 16px;
+    min-height: 650px;
+    color: #FFFF;
+    background:linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../imagenes/imagen_pelicula_principal.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+
+}
+.pelicula_principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.pelicula_principal .titulo{
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.pelicula_principal .descripcion{
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 50%;
+    margin-bottom: 20px;
+}
+.pelicula_principal .boton{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #FFFF;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 18px;
+    
+}
+.pelicula_principal .boton:hover {
+    background: #fff;
+    color: #000;
+}
+.pelicula_principal .boton i {
+    margin-right: 20px;
+}
+.contenedor-series{
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: grid;
+    grid-column-gap: 1%;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.imagen-portada-thewalkingdead img{
+    width: 300px;
+    height: 150px;
+}
+.contenedor-series div {
+    align-items: center;
+    text-align: center;
+
+}
+.subTitulo {
+   
+    text-align: center;
+    color: white;
+    margin-bottom: 3%;
+    font-size: 25px;
+}
+@media screen and (min-width:320px){
+    .contenedor-series{
+        grid-column-gap: 1%;
+        grid-template-columns: 1fr;
+    }
+}
+
